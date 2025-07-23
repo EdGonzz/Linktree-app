@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-main: #fdf6fd;
+  --color-card: #f0e6f6;
+  --color-hover: #e6d6ff;
+  --color-primary: #c168ff;
+  --color-primary-light: #d29fff;
+  --color-accent-green: #62e2a0;
+  --color-accent-blue: #7dcfff;
+  --color-accent-yellow: #ffd166;
+  --color-text-primary: #2d1f2f;
+  --color-text-secondary: #393e46;
+  --color-text-brand: #c168ff;
+}
