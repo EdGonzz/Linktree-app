@@ -160,4 +160,8 @@ dist
 .history
 .ionide
 
+### VsCode Patch ###
+# Ignore all local history of files
+.vscode/
+
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
