@@ -8,17 +8,146 @@
   <link href="/assets/output.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="flex flex-col items-center justify-center py-10 bg-main">
+<body class="bg-main">
+  <header class="flex flex-col items-center justify-center py-10">
     <img src="/assets/photo.webp" alt="Foto de perfil de Edwin Contreras, desarrollador frontend"
       class="w-32 h-32 rounded-full shadow-md mb-4 border-4 object-cover border-card">
     <h1 class="text-3xl font-bold mb-2 text-primary">Edwin Contreras</h1>
-    <p class="text-base text-center max-w-lg text-balance text-text-secondary">Full-Stack
+    <p class="text-base text-center max-w-lg text-text-secondary">Full-Stack
       Developer en
       formación &bull;
-      Estudiante en Platzi &bull; Aprendiz constante de nuevas tecnologías &bull; Fan del café y el buen diseño
+      Estudiante en Platzi &bull; Aprendiz constante de nuevas tecnologías
     </p>
   </header>
+
+  <main class="grid grid-cols-12 gap-6 px-4 py-8 max-w-6xl mx-auto">
+    <!-- Elemento grande: Portafolio Web -->
+    <section
+      class="col-span-12 md:col-span-6 row-span-2 bg-primary-light/50 rounded-2xl shadow-md hover:shadow-lg hover:animate-tilt transition-all group">
+      <a href="https://portfolio-dev-theta-mocha.vercel.app/" target="_blank" rel="noopener noreferrer"
+        aria-label="Ver proyectos">
+        <div class="flex flex-row justify-between gap-16 p-6">
+          <header class="flex flex-col justify-between">
+            <h2 class="text-2xl font-bold text-black mb-2 flex items-center gap-2">
+              Mi Portafolio Web
+            </h2>
+            <p class="text-text-secondary mb-4">Explora mis proyectos más recientes y trabajos destacados</p>
+          </header>
+          <div class="flex items-center justify-center group-hover:rotate-18 transition-transform duration-300">
+            <svg class="text-primary size-12" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <use href="/assets/svg/sprite.svg#briefcase"></use>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Elemento grande: Contacto -->
+    <section
+      class="col-span-12 md:col-span-6 row-span-2 bg-accent-blue/50 rounded-2xl shadow-md hover:shadow-lg hover:animate-tilt transition-all group">
+      <a href="https://www.linkedin.com/in/edwin-contreras-1bb516247/?locale=es_ES" target="_blank"
+        rel="noopener noreferrer" aria-label="Contactar">
+        <div class="flex flex-row justify-between gap-16 p-6">
+          <header class="flex flex-col justify-between">
+            <h2 class="text-2xl font-bold flex items-center gap-2 mb-2">
+              ¿Trabajamos juntos?
+            </h2>
+            <p class="mb-4">Estoy disponible para nuevos proyectos y colaboraciones</p>
+          </header>
+          <div class="flex items-center justify-center group-hover:rotate-18 transition-transform duration-300">
+            <svg class="text-accent-blue-dark size-12" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <use href="/assets/svg/sprite.svg#handshake"></use>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Elementos medianos -->
+    <section
+      class="col-span-12 md:col-span-3 bg-linear-to-b from-main-blue-dark from-45% to-black rounded-2xl shadow-md text-white flex flex-col justify-between p-6 hover:shadow-lg hover:scale-105 transition-transform group">
+      <a href="https://github.com/EdGonzz" target="_blank" rel="noopener noreferrer" aria-label="Ver GitHub">
+        <div class="flex items-center gap-2 mb-2">
+          <svg class="size-6 group-hover:animate-rotate-360 group-hover:animate-duration-500">
+            <use href="/assets/svg/sprite.svg#github"></use>
+          </svg>
+          <span class="font-semibold">GitHub</span>
+        </div>
+        <span class="text-text-secondary">Código abierto</span>
+      </a>
+    </section>
+
+    <section class="col-span-12 md:col-span-3 bg-[#fdf6fd] rounded-2xl shadow-md flex flex-col justify-between p-6">
+      <div class="flex items-center gap-2 mb-2">
+        <svg class="size-6">
+          <use href="/assets/svg/sprite.svg#utils"></use>
+        </svg>
+        <span class="font-semibold">Utils</span>
+      </div>
+      <span class="text-text-secondary">Artículos y tutoriales</span>
+    </section>
+
+    <section class="col-span-12 md:col-span-3 bg-[#e6d6ff] rounded-2xl shadow-md flex flex-col justify-between p-6">
+      <div class="flex items-center gap-2 mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent-green" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12v4a4 4 0 01-8 0v-4" />
+        </svg>
+        <span class="font-semibold">Newsletter</span>
+      </div>
+      <span class="text-text-secondary">Suscríbete aquí</span>
+    </section>
+    <section class="col-span-12 md:col-span-3 bg-[#ffd166] rounded-2xl shadow-md flex flex-col justify-between p-6">
+      <div class="flex items-center gap-2 mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent-blue" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+        </svg>
+        <span class="font-semibold">Curso de Desarrollo</span>
+      </div>
+      <span class="text-text-secondary">Aprende conmigo</span>
+    </section>
+
+    <!-- Elementos pequeños -->
+    <section
+      class="col-span-6 md:col-span-3 bg-[#f0e6f6] rounded-2xl shadow-md flex flex-col items-center justify-center p-4">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17.657 16.657L13.414 12.414a4 4 0 10-5.657 5.657l4.243 4.243a8 8 0 1011.314-11.314z" />
+        </svg>
+        <span class="text-text-secondary">Madrid, ES</span>
+      </div>
+    </section>
+    <section
+      class="col-span-6 md:col-span-3 bg-[#62e2a0] rounded-2xl shadow-md flex flex-col items-center justify-center p-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+        <span class="text-white">Disponible</span>
+      </div>
+    </section>
+    <section
+      class="col-span-6 md:col-span-3 bg-[#ffd166] rounded-2xl shadow-md flex flex-col items-center justify-center p-4">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-accent-blue" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4-4-4-4m8 8V7" />
+        </svg>
+        <span class="text-text-secondary">Cómprame un café</span>
+      </div>
+    </section>
+    <section
+      class="col-span-6 md:col-span-3 bg-[#f0e6f6] rounded-2xl shadow-md flex flex-col items-center justify-center p-4">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-light" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10" />
+        </svg>
+        <span class="text-text-secondary">Agenda una call</span>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
