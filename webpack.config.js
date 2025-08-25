@@ -10,7 +10,7 @@ module.exports = {
   resolve: {
     extensions: ['.js']
   },
-  modile: {
+  module: {
     rules: [
       {
         test: /\.js$/,
