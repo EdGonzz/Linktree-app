@@ -164,4 +164,7 @@ dist
 # Ignore all local history of files
 .vscode/
 
+### github instructions ###
+.github/
+
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
